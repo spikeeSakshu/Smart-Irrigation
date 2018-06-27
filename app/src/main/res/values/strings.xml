@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartIrrigation</string>
+    <string name="title_activity_login">Login</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Login</string>
+    <string name="tab_text_2">SignUp</string>
+
+</resources>
