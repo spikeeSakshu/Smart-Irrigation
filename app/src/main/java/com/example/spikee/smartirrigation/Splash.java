@@ -19,7 +19,7 @@ public class Splash extends AppCompatActivity {
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in =new Intent(Splash.this,Login.class);
+                Intent in =new Intent(Splash.this,Select.class);
                 startActivity(in);
             }
         });
