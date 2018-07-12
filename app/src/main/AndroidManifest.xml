@@ -42,7 +42,8 @@
         </receiver>
 
         <activity android:name=".Help" />
-        <activity android:name=".Automatic"></activity>
+        <activity android:name=".Automatic" />
+        <activity android:name=".SemiAutomatic"></activity>
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class Manual extends AppCompatActivity {
-    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 0;
+   // private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 0;
 
     private String message;
     private String number;
