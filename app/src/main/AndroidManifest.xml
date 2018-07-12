@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -41,7 +41,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Help"></activity>
+        <activity android:name=".Help" />
+        <activity android:name=".Automatic"></activity>
     </application>
 
 </manifest>

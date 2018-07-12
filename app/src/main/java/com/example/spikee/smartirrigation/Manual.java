@@ -29,6 +29,9 @@ public class Manual extends AppCompatActivity {
     @BindView(R.id.off)
     Button off;
 
+    @BindView(R.id.get)
+    Button get;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +55,14 @@ public class Manual extends AppCompatActivity {
                 turnoff();
             }
         });
+
+        get.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                message = "Sensor ping";
+                getValue();
+            }
+        });
     }
 
     public void turnon() {
@@ -67,6 +78,11 @@ public class Manual extends AppCompatActivity {
                 Toast.LENGTH_LONG).show();
     }
 
+    public void getValue(){
+        smsManager.sendTextMessage(number, null, message, null, null);
+        Toast.makeText(getApplicationContext(), "SMS Sent",
+                Toast.LENGTH_LONG).show();
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_item, menu);

@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -110,7 +111,7 @@ public class login_tab extends android.support.v4.app.Fragment implements View.O
                 final TextInputEditText et = (TextInputEditText) mview.findViewById(R.id.et);
                 final TextView tv = mview.findViewById(R.id.tv);
                 final Button send = (Button) mview.findViewById(R.id.send);
-                ImageButton ib = (ImageButton) mview.findViewById(R.id.ib);
+                ImageView close =  mview.findViewById(R.id.close);
                 send.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -121,14 +122,14 @@ public class login_tab extends android.support.v4.app.Fragment implements View.O
                             send.setVisibility(View.GONE);
 
                         } else {
-                            Toast.makeText(getActivity(), "Please enter a valid Email Address", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Please enter a valid Email Id", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
                 mbuilder.setView(mview);
                 final AlertDialog dialog = mbuilder.create();
                 dialog.show();
-                ib.setOnClickListener(new View.OnClickListener() {
+                close.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         dialog.dismiss();
