@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity
+
             android:name=".Login"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -41,9 +42,12 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Help" />
-        <activity android:name=".Automatic" />
-        <activity android:name=".SemiAutomatic"></activity>
+        <activity android:name=".Help"
+            android:label="Help"/>
+        <activity android:name=".Automatic"
+            android:label="Automatic Mode"/>
+        <activity android:name=".SemiAutomatic"
+            android:label="Semi-Automatic Mode"/>
     </application>
 
 </manifest>
