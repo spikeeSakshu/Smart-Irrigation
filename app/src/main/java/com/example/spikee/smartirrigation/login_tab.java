@@ -47,11 +47,7 @@ public class login_tab extends android.support.v4.app.Fragment implements View.O
             progressDialog=new ProgressDialog(getActivity());
             firebaseAuth=FirebaseAuth.getInstance();
 
-            if(firebaseAuth.getCurrentUser()!=null)
-            {
-                Intent in=new Intent(getActivity(),Switch.class);
-                startActivity(in);
-            }
+
 
 
             login.setOnClickListener(this);
@@ -86,7 +82,8 @@ public class login_tab extends android.support.v4.app.Fragment implements View.O
 
                     if(task.isSuccessful())
                     {
-                        startActivity(new Intent(getActivity(),Switch.class));
+                        getActivity().finish();
+                        startActivity(new Intent(getActivity(),Select.class));
                     }
                     else
                     {

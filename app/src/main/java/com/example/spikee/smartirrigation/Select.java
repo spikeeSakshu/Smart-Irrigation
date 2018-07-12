@@ -35,8 +35,8 @@ public class Select extends AppCompatActivity {
         semi_automatic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in=new Intent(Select.this,receivesms.class);
-                startActivity(in);
+                //Intent in=new Intent(Select.this,receivesms.class);
+             //   startActivity(in);
             }
         });
     }

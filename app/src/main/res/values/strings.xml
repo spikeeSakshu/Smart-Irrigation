@@ -7,4 +7,13 @@
     <string name="tab_text_1">Login</string>
     <string name="tab_text_2">SignUp</string>
 
+    <string name="phone_number">Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="change">Change Mode</string>
+    <string name="help">Help</string>
+
 </resources>
